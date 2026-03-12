@@ -89,7 +89,7 @@
     refer.addEventListener("keydown", (event) => {
         
         // . Check if the key pressed was the "Enter" key
-        if (event.key === "Enter") {
+        if (event.key === "Enter" && refer.value.trim() !== "") {
             
             const li = document.createElement("li");
             
